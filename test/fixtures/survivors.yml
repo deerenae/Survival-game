@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tool: one
+  shelter: one
+
+two:
+  tool: two
+  shelter: two
