@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script defer src='tool.js'></script>
+    <link rel="stylesheet" href="tool.css">
 </head>
-<header>Hey friends
-</header>
 <body>
+    <header>
+        <h1>SURVIVAL:</h1>
+        <h2>The Wretched Year of 2020</h2>
+    </header>
+    <h5>Please choose a tool that will help you survive 2020</h5>
+    <form action="http://localhost:3000/survivors" method="PATCH">
+        <select id="tool-dropdown" name="tool_id"></select>/>
+        <!-- <input type="button" onclick="location.href ='tool.html';" value="Move on to Tool Choice"> -->
+    </form>
     
 </body>
 </html>
