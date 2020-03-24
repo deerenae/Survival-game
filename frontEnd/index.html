@@ -13,10 +13,12 @@
         <h2>The Wretched Year of 2020</h2>
     </header>
     <h5>Please choose a shelter type and a tool that will help you survive 2020</h5>
-    <form action="http://localhost:3000/survivors" method="POST">
+    <form action="http://localhost:3000/survivors" method="PATCH">
         <select id="shelter-dropdown" name="shelter_id"></select>/>
-        <select id="tool-dropdown" name="tool_id"></select>/>
-        <input type="submit" value="See Your 2020 Destiny"/>
+        <!-- <select id="tool-dropdown" name="tool_id"></select>/> -->
+        <input type="button" id="tool-dropdown" value="Move on to Tool Choice">
+        <!-- <input type="button" onclick="location.href ='https://www.homedepot.com/b/Tools/N-5yc1vZc1xy';" value="Move on to Tool Choice"> -->
+        <!-- <input type="submit" value="Move on to Tool choice"/> -->
     </form>
     
 </body>
