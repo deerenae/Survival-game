@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Survivor.destroy_all
-Tools.destroy_all
+Tool.destroy_all
 Shelter.destroy_all
 
 t1 = Tool.create(name: "Machete", rating: 8, image: "https://hosstools.com/wp-content/uploads/farm-machete-1.jpg")
