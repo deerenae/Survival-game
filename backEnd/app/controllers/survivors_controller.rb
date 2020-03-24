@@ -12,6 +12,14 @@ class SurvivorsController < ApplicationController
             tool_id: params[:tool_id],
             shelter_id: params[:shelter_id],
         )
-        redirect_to `http://localhost:3003/shelter/${id}`
+        render json: survivor
     end 
+    def update
+        survivor = Survivor.find(params[:id])
+        survivor.update(
+            tool_id: params[:tool_id],
+            shelter_id: params[:shelter_id]
+        )
+        # redirect_to: ""
+    end
 end
