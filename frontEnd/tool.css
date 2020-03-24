@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+  }
+  
+  h1 {
+    color:red;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  h2 {
+    color: red;
+    text-align: center;
+    font-family: Impact;
+  }
+  h5 {
+    color: red;
+    text-align: center;
+  }
+  form {
+    color: red;
+    text-align: center;
+  }
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
