@@ -12,6 +12,6 @@ class SurvivorsController < ApplicationController
             tool_id: params[:tool_id],
             shelter_id: params[:shelter_id],
         )
-        render json: survivor
+        redirect_to `http://localhost:3003/shelter/${id}`
     end 
 end
