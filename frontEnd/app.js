@@ -13,14 +13,15 @@ function shelterList(shelters) {
     })
 }
 
-var i;
-for (i = 0; i < 1; i++) { //i might do something with this for loop so it iterates 
-                        //through each card and adds its event listener
 
-let btn = document.querySelector(".btn");
-let card = document.querySelector(".card");
 
-btn.addEventListener("click", () => {
-    card.classList.toggle("active");
-});
-}
+
+const btn = document.querySelectorAll(".btn");
+const card = document.querySelectorAll(".card");
+
+btn[0].addEventListener("click", function() {card[0].classList.toggle("active")});
+btn[1].addEventListener("click", function() {card[1].classList.toggle("active")});
+btn[2].addEventListener("click", function() {card[2].classList.toggle("active")});
+btn[3].addEventListener("click", function() {card[3].classList.toggle("active")});
+btn[4].addEventListener("click", function() {card[4].classList.toggle("active")});
+btn[5].addEventListener("click", function() {card[5].classList.toggle("active")});
