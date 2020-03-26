@@ -13,10 +13,10 @@
 }
 
 .card {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 25px;
+    margin-left: 25px;
     width: 300px;
     height: 470px;
     background-color: #ffffff;
@@ -34,7 +34,7 @@
 
 }
 
-.shelter-image {
+.caveshelter-image {
     position: absolute;
     height: 80%;
     left: 50%;
@@ -127,8 +127,8 @@
     transform: translate(-50%, 30px);
 }
 
-.card.active .shelter-image {
-    height: 150%;
+.card.active .caveshelter-image {
+    height: 180%;
     transform: translate(-50%, -30%)
 }
 
@@ -136,12 +136,12 @@
     transform: translateY(-27px);
 }
 
-.card.active .quote {
+.card.active .cavequote {
     transform: translateY(90px);
 }
 
-.card.active .auth {
-    transform: translate(66px, 85px);
+.card.active .caveauth {
+    transform: translate(60px, 85px);
 }
 
 .card.active .cardback {
