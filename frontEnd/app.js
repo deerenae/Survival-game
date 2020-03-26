@@ -14,7 +14,8 @@ function shelterList(shelters) {
 }
 
 var i;
-for (i = 0; i < 1; i++) {
+for (i = 0; i < 1; i++) { //i might do something with this for loop so it iterates 
+                        //through each card and adds its event listener
 
 let btn = document.querySelector(".btn");
 let card = document.querySelector(".card");
