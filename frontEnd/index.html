@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SURVIVAL</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet">
     <script defer src='app.js'></script>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header>
@@ -18,8 +20,51 @@
          <!-- <select id="tool-dropdown" name="tool_id"></select>/> -->
         <input type="button" onclick="location.href ='tool.html';" value="Move on to Tool Choice">
      </form>
-     <h6>Cards</h6>
-  
+     <cards class="grid-container">
+         
+        <div class="card">
+            <link rel="stylesheet" href="qhouse.css">
+            <div class="image-box"></div>
+            <img class="shelter-image" src="qhouse.jpg" alt="qhouse">
+            <div class="bottom">
+            <div class="btn"> 
+                <div class="btn-text">
+                    <span>More</span><span>Close</span>
+                </div>
+            </div>
+            <div class="name">Quarantine House</div>
+            <div class="designation">Shelter</div>
+        </div>
+        <div class="cardback">
+            <p>Shelter Rating: 7</p>
+            <p style="line-height: 1" class="quote"><font size="2"><i>"Jill, we've traced the call - it's coming from inside the house!"</i></font></p>
+            <p class="auth"><font size="1">- Officer Burroughs</font></p>
+        </div>
+            
+        <!-- <div class="card">
+            <link rel="stylesheet" href="tarp.css">
+            <div class="image-box"></div>
+            <img class="shelter-image" src="tarp.jpg" alt="tarp">
+            <div class="bottom">
+                <div class="btn"> 
+                    <div class="btn-text">
+                        <span>More</span><span>Close</span>
+                    </div>
+                </div>
+                <div class="name">Tarp</div>
+                <div class="designation">Shelter</div>
+            </div>
+            <div class="cardback">
+                    <p>Shelter Rating: 6</p>
+                    <p style="line-height: 1" class="quote"><font size="2"><i>"The only difference between me and a homeless man is this job. I will do whatever it takes to survive. Like I did - when I was a homeless man."</i></font></p>
+                    <p class="auth"><font size="1">- Creed Bratton</font></p>
+            </div>
+
+        </div> -->
+        
+
+    </cards>
+    </div>
  
 </body>
 </html>
