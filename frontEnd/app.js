@@ -12,3 +12,14 @@ function shelterList(shelters) {
         shelterDropdown.append(shelterOptions)
     })
 }
+
+var i;
+for (i = 0; i < 1; i++) {
+
+let btn = document.querySelector(".btn");
+let card = document.querySelector(".card");
+
+btn.addEventListener("click", () => {
+    card.classList.toggle("active");
+});
+}
