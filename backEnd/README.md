@@ -1,24 +1,34 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
+This README includes the necessary steps to get the
 application up and running.
 
-Things you may want to cover:
+* Survival Game: Year 2020
+    This project is a game in which the user, or 'survivor' must choose a shelter and then a tool to help them survive the year of 2020. If the survivor chooses wisely they survive, if not they do not survive.
 
-* Ruby version
+* In backEnd Directory
+   * Within the terminal run:
+    > bundle install
+    <!-- to install gems in Gemfile -->
+    > rails db:migrate
+    <!-- to migrate database -->
+    > rails db:seed
+    <!-- to seed data -->
+    > rails s
+    <!-- to start backend server -->
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
+* In frontEnd Directory
+   * Within the terminal run:
+   > lite-server
+   <!-- to start frontend server -->
 
 * How to run the test suite
+    *Call 'byebug' anywhere in the backend code to stop execution and get a debugger console
+    gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 
-* Services (job queues, cache servers, search engines, etc.)
+    *To test in the frontend use console.log() in the code in Javascript files then go to the developer console within the application's browser
 
-* Deployment instructions
+* Created by Katie Belanger and Matt Mrozewski
 
-* ...
+* Ruby 2.6.1
+
