@@ -53,7 +53,7 @@ h5{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-form {
+/* form {
   margin: 20px auto;
   display:block;
   width: 420px;
@@ -65,7 +65,7 @@ form {
   border-radius: 5px;
 
   transition: background-color 1000ms, color 1000ms;
-}
+} */
 
 select, input {
   margin: 20px auto;
@@ -78,6 +78,8 @@ select, input {
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
   border-radius: 5px;
+
+  transition: background-color 1000ms, color 1000ms;
 }
 
 .firstRow{

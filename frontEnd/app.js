@@ -14,7 +14,7 @@ function shelterList(shelters) {
     shelters.forEach(shelter => {
         const shelterOptions = document.createElement('option')
         shelterOptions.innerText = shelter.name
-        shelterOptions.value = shelter.id
+        shelterOptions.value = shelter.rating
         shelterDropdown.append(shelterOptions)
     })
 }
@@ -23,10 +23,6 @@ function passValue() {
     localStorage.setItem("shelter", shelterSelect)
     return true;
 }
-
-
-
-
 const btn = document.querySelectorAll(".btn");
 const card = document.querySelectorAll(".card");
 

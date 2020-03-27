@@ -13,7 +13,7 @@ function toolList(tools) {
     tools.forEach(tool => {
         const toolOptions = document.createElement('option')
         toolOptions.innerText = tool.name
-        toolOptions.value = tool.id
+        toolOptions.value = tool.rating
         toolDropdown.append(toolOptions)
     })
 }
