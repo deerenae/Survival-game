@@ -2,7 +2,7 @@ const shelterDropdown = document.querySelector('#shelter-dropdown')
 const shelterSelection = document.querySelector('#shelter-selection')
 shelterSelection.addEventListener("click", function(){
     passValue()
-    // location.href ='tool.html'
+    location.href ='tool.html'
 })
 
 
@@ -19,16 +19,78 @@ function shelterList(shelters) {
     })
 }
 function passValue() {
-    const shelterSelect = document.getElementById("shelter-dropdown").value;
+    const shelterObj = document.getElementById("shelter-dropdown");
     const weather = document.querySelector("#weather").innerText;
-    const temp = weather.match(/\d+/g)[0];
-    console.log(temp);
+    let temp = weather.match(/\d+/g)[0];
+    let conditions = [];
+    if (weather.match( /sun|rain|snow|cloud/g )) {
+        conditions = weather.match( /sun|rain|snow|cloud/g );
+    }
+    else {
+        let conditions = ["cloud"];
+    }
 
+    if (temp > 60) {
+        shelterObj[0].value = parseFloat(shelterObj[0].value) + 3;
+        shelterObj[1].value = parseFloat(shelterObj[1].value) + 2;
+        shelterObj[2].value -= 4;
+        shelterObj[3].value -= 2;
+        shelterObj[4].value = 0;
+        shelterObj[5].value = parseFloat(shelterObj[5].value) + 2;
+    }
 
-    const shelterobj = document.getElementById("shelter-dropdown");
-    console.log(shelterobj);
-    console.log(shelterobj.innerText);
-    console.log(shelterobj.value);
+    if (temp <= 60 && temp > 50) {
+        shelterObj[4].value -= 3;
+        shelterObj[1].value = praseFloat(shelterObj[1].value) + 2;
+    }
+
+    if (temp <= 50 && temp > 40) {
+        shelterObj[0].value -= 2;
+        shelterObj[1].value -= 1;
+        shelterObj[4].value -= 1;
+    }
+
+    if (temp <= 40 && temp > 32) {
+        shelterObj[0].value -= 3;
+        shelterObj[1].value -= 1;
+        shelterObj[3].value -= 1;
+        shelterObj[5].value -= 2;
+    }
+
+    if (temp < 32) {
+        shelterObj[0].value -= 4;
+        shelterObj[1].value -= 2;
+        shelterObj[3].value -= 2;
+        shelterObj[4].value = parseFloat(shelterObj[4].value) + 4;
+        shelterObj[5].value -= 3;
+    }
+
+    if (conditions.includes("sun")) {
+        shelterObj[0].value = parseFloat(shelterObj[0].value) + 1;
+        shelterObj[1].value = parseFloat(shelterObj[1].value) + 1;
+        shelterObj[2].value -= 1;
+        shelterObj[3].value -= 1;
+        shelterObj[5].value = parseFloat(shelterObj[5].value) + 1;
+    }
+
+    if (conditions.includes("rain") || conditions.includes("wind")) {
+        shelterObj[0].value -= 2;
+        shelterObj[1].value -= 1;
+        shelterObj[5].value -= 1;
+    }
+
+    if (conditions.includes("snow")) {
+        shelterObj[0].value -= 2;
+        shelterObj[1].value -= 1;
+        shelterObj[5].value -= 1;
+    }
+
+    for (var i = 0; i < 6; i++) {
+        if (shelterObj[i].value < 0) {
+            shelterObj[i] = 0;
+        }
+    }
+    const shelterSelect = shelterObj.value;
     localStorage.setItem("shelter", shelterSelect)
     return true;
 }
