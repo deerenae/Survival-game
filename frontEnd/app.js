@@ -18,6 +18,7 @@ function shelterList(shelters) {
         shelterDropdown.append(shelterOptions)
     })
 }
+
 function passValue() {
     const shelterObj = document.getElementById("shelter-dropdown");
     const weather = document.querySelector("#weather").innerText;
