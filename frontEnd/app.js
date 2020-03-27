@@ -2,7 +2,7 @@ const shelterDropdown = document.querySelector('#shelter-dropdown')
 const shelterSelection = document.querySelector('#shelter-selection')
 shelterSelection.addEventListener("click", function(){
     passValue()
-    location.href ='tool.html'
+    // location.href ='tool.html'
 })
 
 
@@ -20,9 +20,39 @@ function shelterList(shelters) {
 }
 function passValue() {
     const shelterSelect = document.getElementById("shelter-dropdown").value;
+    const weather = document.querySelector("#weather").innerText;
+    const temp = weather.match(/\d+/g)[0];
+    console.log(temp);
+
+
+    const shelterobj = document.getElementById("shelter-dropdown");
+    console.log(shelterobj);
+    console.log(shelterobj.innerText);
+    console.log(shelterobj.value);
     localStorage.setItem("shelter", shelterSelect)
     return true;
 }
+
+link = "https://api.openweathermap.org/data/2.5/weather?q=denver&units=imperial&apikey=6758f17c71f45068f52b0a450b4e508a";
+let request = new XMLHttpRequest();
+request.open("GET", link, true);
+request.onload = function() {
+    let obj = JSON.parse(this.response);
+    if (request.status >= 200 && request.status < 400) {
+        let temp = obj.main.temp;
+        let conditions = obj.weather[0].description;
+        let weatherSection = document.getElementById("weather");
+        let content = document.createTextNode(`${temp} degrees and ${conditions}`);
+        weatherSection.appendChild(content);
+    }
+    else {
+        console.log("Looks like our meteorologists didn't make it...");
+    }
+}
+request.send();
+
+
+
 const btn = document.querySelectorAll(".btn");
 const card = document.querySelectorAll(".card");
 
