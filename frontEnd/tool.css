@@ -12,9 +12,9 @@ body{
   background-position:center;
   background-size:cover;
   background-blend-mode:soft-light;
-  width:600px;
+  /* width:600px;
   height:300px;
-  margin:auto;
+  margin:auto; */
   /* position:absolute; */
   top:0px; bottom:0px; right:0px; left:0px;
 }
@@ -85,8 +85,9 @@ select, input {
 .firstRow{
   width: 1200px;
   height: 400px;
-  transform: translate(-25%);
+  /* transform: translate(-25%); */
   margin: auto;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -95,8 +96,9 @@ select, input {
 .secondRow{
   width: 1200px;
   height: 400px;
-  transform: translate(-25%, 30%);
+  /* transform: translate(-25%, 30%); */
   margin: auto;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   flex-direction: row;

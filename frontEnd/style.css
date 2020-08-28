@@ -9,12 +9,12 @@ html, body{
 body{
   background-color:rgba(160, 57, 57, 0.849);
   background-image:url(https://townsquare.media/site/366/files/2015/08/Apocalypse1-630x420.jpg?w=980&q=75);
-  background-position:center;
+  background-position: center;
   background-size:cover;
   background-blend-mode:soft-light;
-  width:600px;
-  height:300px;
-  margin:auto;
+  /* width:600px;
+  height:300px; */
+  /* margin:auto; */
   /* position:absolute; */
   top:0px; bottom:0px; right:0px; left:0px;
 }
@@ -98,8 +98,9 @@ select,input {
 .firstRow{
   width: 1200px;
   height: 400px;
-  transform: translate(-25%);
+  /* transform: translate(-25%); */
   margin: auto;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -108,12 +109,14 @@ select,input {
 .secondRow{
   width: 1200px;
   height: 400px;
-  transform: translate(-25%, 30%);
+  /* transform: translate(-25%, 30%); */
   margin: auto;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
+
 
 
 
