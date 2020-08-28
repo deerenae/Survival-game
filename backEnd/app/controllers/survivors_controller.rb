@@ -20,6 +20,5 @@ class SurvivorsController < ApplicationController
             tool_id: params[:tool_id],
             shelter_id: params[:shelter_id]
         )
-        # redirect_to: ""
     end
 end

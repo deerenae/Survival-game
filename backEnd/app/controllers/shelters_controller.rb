@@ -3,12 +3,10 @@ class SheltersController < ApplicationController
         shelters = Shelter.all 
         render json: shelters
     end
-
     def show
         shelter = Shelter.find(params[:id])
         render json: shelter 
     end
-
     def create
         shelter = Shelter.create(
             name: params[:name],
@@ -17,7 +15,6 @@ class SheltersController < ApplicationController
         )
         render json: shelter
     end 
-
     def update
         shelter = Shelter.find(params[:id])
         shelter = Shelter.create(
@@ -27,9 +24,8 @@ class SheltersController < ApplicationController
         )
         render json: shelter 
     end
-
     def destroy
         shelter = Shelter.find(params[:id])
         shelters.destroy 
-    end
+    end   
 end

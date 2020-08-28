@@ -3,12 +3,10 @@ class ToolsController < ApplicationController
         tools = Tool.all 
         render json: tools 
     end
-
     def show
         tool = Tool.find(params[:id])
         render json: tool
     end
-
     def create
         tool = Tool.create(
             name: params[:name],
@@ -17,7 +15,6 @@ class ToolsController < ApplicationController
         )
         render json: tool 
     end
-
     def update
         tool = Tool.find(params[:id])
         tool.update(
@@ -26,7 +23,6 @@ class ToolsController < ApplicationController
             image: params[:image]
         )
     end
-
     def destroy
         tool = Tool.find(params[:id])
         tool.destroy
